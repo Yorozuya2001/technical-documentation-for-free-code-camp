@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>HTML Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>HTML Documentación</header>
+        <ul>
+            <li><a class="nav-link" href="#Introducción_a_HTML">Introducción a HTML</a></li>
+            <li><a class="nav-link" href="#¿Que_es_HTML_en_realidad?">¿Que es HTML en realidad?</a></li>
+            <li><a class="nav-link" href="#Anatomía_de_un_elemento_HTML">Anatomía de un elemento HTML</a></li>
+            <li><a class="nav-link" href="#Anidar_elementos">Anidar elementos</a></li>
+            <li><a class="nav-link" href="#Elementos_Vacíos">Elementos Vacíos</a></li>
+            <li><a class="nav-link" href="#Leer_más_sobre_HTML_en_Developer_Mozilla">Leer más sobre HTML en Developer
+                    Mozilla</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introducción_a_HTML">
+            <header>Introducción a HTML</header>
+            <article>
+                <p>
+                    HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más
+                    básico de la Web. Define el significado y la estructura del contenido web. Además de HTML,
+                    generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página
+                    web (CSS) o la funcionalidad/comportamiento (JavaScript).
+                </p>
+                <p>
+                    "Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un
+                    único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir
+                    contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un
+                    participante activo en la «World Wide Web» (Red Informática Mundial).
+                </p>
+                <p>HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido para mostrarlo en un navegador
+                    Web.
+                </p>
+                <code>
+                    &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;,
+                    &lt;section&gt;, &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;, &lt;audio&gt;,
+                    &lt;canvas&gt;, &lt;datalist&gt;, &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;output&gt;
+                    (en-US), &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;
+                </code>
+                <p>
+                    Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas", que consisten en
+                    el nombre del elemento rodeado por <code>"&lt;"</code> y <code>"&gt;"</code> . El nombre de un
+                    elemento dentro de una etiqueta
+                    no
+                    distingue entre mayúsculas y minúsculas. Es decir, se puede escribir en mayúsculas, minúsculas o
+                    una mezcla. Por ejemplo, la etiqueta <code>&lt;title&gt;</code> se puede escribir como
+                    <code>&lt;Title&gt;</code>, <code>&lt;TITLE&gt;</code> o
+                    de
+                    cualquier otra forma.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="¿Que_es_HTML_en_realidad?">
+            <header>¿Que es HTML en realidad?</header>
+            <article>
+                <p>HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu
+                    contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del
+                    contenido para que se vean o comporten de una determinada manera. Las etiquetas de encierre pueden
+                    hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a
+                    cursiva, agrandar o achicar la letra, etc. Por ejemplo, toma la siguiente línea de contenido:</p>
+                <code>
+                    Mi gato es muy gruñon
+                </code>
+                <p>Si quieres especificar que se trata de un párrafo, podrías encerrar el texto con la etiqueta de
+                    párrafo <code>&lt;p&gt;</code></p>
+                <code>
+                    &lt;p&gt;Mi gato es muy gruñon &lt;/p&gt;
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Anatomía_de_un_elemento_HTML">
+            <header>Anatomía de un elemento HTML</header>
+            <article>
+                <p>Explora este párrafo en mayor profundidad.</p>
+                <img src="./htmlexp.png" alt="ejemplo de html">
+                <p>Las partes principales del elemento son:</p>
+                <ol>
+                    <li><b>La etiqueta de apertura:</b> consiste en el nombre del elemento (en este caso, p), encerrado
+                        por
+                        paréntesis angulares (&lt;p&gt;) de apertura y cierre. Establece dónde comienza o empieza a
+                        tener
+                        efecto el elemento —en este caso, dónde es el comienzo del párrafo—.
+                    </li>
+                    <li><b>La etiqueta de cierre:</b> es igual que la etiqueta de apertura, excepto que incluye una
+                        barra de
+                        cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento —en este caso
+                        dónde termina el párrafo—.</li>
+                    <li><b>El contenido:</b> este es el contenido del elemento, que en este caso es sólo texto.</li>
+                    <li><b>El elemento:</b> la etiqueta de apertura, más la etiqueta de cierre, más el contenido
+                        equivale al
+                        elemento.</li>
+                </ol>
+                <p>Los elementos pueden también tener atributos, que se ven así:</p>
+                <img src="./htmlatributos.png" alt="html atributos">
+                <p>Los atributos contienen información adicional acerca del elemento, la cual no quieres que aparezca en
+                    el contenido real del elemento. Aquí <code>class</code> es el nombre del atributo y
+                    <code>editor-note</code> el valor del
+                    atributo. En este caso, el atributo <code>class</code> permite darle al elemento un nombre
+                    identificativo, que se
+                    puede utilizar luego para apuntarle al elemento información de estilo y demás cosas.</p>
+                <p>Un atributo debe tener siempre:</p>
+                <ol>
+                    <li>Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee
+                        uno o más atributos).</li>
+                    <li>El nombre del atributo, seguido por un signo de igual (=).</li>
+                    <li>Comillas de apertura y de cierre, encerrando el valor del atributo.</li>
+                </ol>
+                <p>Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Anidar_elementos">
+            <header>Anidar elementos</header>
+            <article>
+                <p>Puedes también colocar elementos dentro de otros elementos —esto se llama anidamiento—. Si, por
+                    ejemplo,
+                    quieres resaltar una palabra del texto (en el ejemplo la palabra «muy»), podemos encerrarla en un
+                    elemento <code>&lt;strong&gt;</code>, que significa que dicha palabra se debe enfatizar:</p>
+                <code>
+                    &lt;p&gt;Mi gato es &lt;strong&gt;muy&lt;/strong&gt; gruñon.&lt;/p&gt;
+                </code>
+                <p>Debes asegurarte que los elementos estén correctamente anidados: en el ejemplo de abajo, creaste la
+                    etiqueta de apertura del elemento <code>&lt;p&gt;</code> primero, luego la del elemento
+                    <code>&lt;strong&gt;</code>, por lo
+                    tanto, debes
+                    cerrar esta etiqueta primero, y luego la de <code>&lt;p&gt;</code>. Esto es incorrecto:</p>
+                <code>
+                    &lt;p&gt;Mi gato es &lt;strong&gt;muy gruñon.&lt;/p&gt;&lt;/strong&gt;
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Elementos_Vacíos">
+            <header>Elementos Vacíos</header>
+            <article>
+                <p>Algunos elementos no poseen contenido, y son llamados elementos vacíos. Toma, por ejemplo, el
+                    elemento <code>&lt;img&gt;</code> de nuestro HTML:</p>
+                <code>
+                    &lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba"&gt;
+                </code>
+                <p>
+                    Posee dos atributos, pero no hay etiqueta de cierre &lt;/img&gt; ni contenido encerrado. Esto es
+                    porque un
+                    elemento de imagen no encierra contenido al cual afectar. Su propósito es desplegar una imagen en la
+                    página HTML, en el lugar en que aparece.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Leer_más_sobre_HTML_en_Developer_Mozilla">
+            <header>Leer más sobre HTML en Developer Mozilla</header>
+            <article>
+                <p>Gracias por leer esta documentación, esta página ha sido realizada por Axel Ariel Valiente el
+                    05/04/2022 para un proyecto en <a href="https://www.freecodecamp.org/espanol/"
+                        target="_blank">freecodecamp</a>.
+                </p>
+                <p>Si deseas leer más sobre la documentación te recomiendo que vayas al <a
+                        href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                        target="_blank">MDN
+                        de Mozilla para developers.</a>.</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
